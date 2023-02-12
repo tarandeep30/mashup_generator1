@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="shortcut icon" type="image/x-icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRigmnnd8ZVrjf4DsGuF5ejvdpMbprW_laQ3zsF3VGnDzZXWdUKjGD_A2-sA-lS6idF-os&usqp=CAU" />
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <title>Mashup Generator - favsongs</title>
+    <style>
+        body{
+            background:#2e2e2e1f;
+        }
+        .ghju {
+    background-color: #000000;
+}
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-dark ghju">
+        <a class="navbar-brand" href="#">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRigmnnd8ZVrjf4DsGuF5ejvdpMbprW_laQ3zsF3VGnDzZXWdUKjGD_A2-sA-lS6idF-os&usqp=CAU" width="30" height="30" class="d-inline-block align-top" alt="">
+          Mashup Generator
+        </a>
+      </nav>
+    <div class="container my-4">
+        <!-- Image and text -->
+        <div class="row">
+          <div class="col-md-4 offset-md-4">
+            <form action="/mashup" method="post">
+              <div class="form-group">
+                <label for="search_query">Search Query:</label>
+                <input type="text" id="search_query" name="search_query" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="num_videos">Number of Videos:</label>
+                <input type="number" id="num_videos" name="num_videos" min="1" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="audio_length">Audio Length (in seconds):</label>
+                <input type="number" class="form-control"  id="audio_length" name="audio_length" min="20">
+              </div>
+              <div class="form-group">
+                <label for="output_filename">Output Filename:</label>
+                <input type="text" class="form-control" id="output_filename" name="output_filename">
+              </div>
+              <div class="form-group">
+                <label for="email_recipient">Email:</label>
+                <input type="email" class="form-control" id="email_recipient" name="email_recipient">
+              </div>
+              <button type="submit" value="Generate" class="btn btn-primary btn-block">Generate</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      
+</body>
+</html>
